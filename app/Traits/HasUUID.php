@@ -25,4 +25,9 @@ trait HasUUID
             $this->primaryKey => 'string',
         ];
     }
+
+    public function getAuthIdentifier()
+{
+    return $this->getKey();
+}
 }
